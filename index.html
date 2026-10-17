@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Returning to Wobble</title>
+<script>location.replace("wobble://auth" + location.search);</script>
+<style>body{font:17px -apple-system,system-ui,sans-serif;text-align:center;padding:4rem 1rem}</style>
+</head>
+<body>
+<p>Returning to Wobble…</p>
+<p><a id="open" href="wobble://auth">Tap here if the app does not open</a></p>
+<script>document.getElementById("open").href = "wobble://auth" + location.search;</script>
+</body>
+</html>
